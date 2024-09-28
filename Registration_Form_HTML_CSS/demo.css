@@ -1,0 +1,36 @@
+.field {
+  background-color: #f5efff;
+  width: 800px;
+  margin-left: 200px;
+}
+body {
+  background-color: #e5d9f2;
+}
+input {
+  margin-left: 20px;
+  color: #640d5f;
+  border-color: #a594f9;
+  background-color: #fff7f7;
+  border-width: 2px;
+}
+label,
+p {
+  display: inline-block;
+  width: 200px;
+  color: #640d5f;
+  font-weight: 400;
+  margin-left: 20px;
+}
+textarea,
+select {
+  margin-left: 20px;
+}
+
+.fileup::file-selector-button {
+  background-color: #f5efff;
+  border-color: #a594f9;
+}
+
+input[type="checkbox"] {
+  accent-color: #a594f9;
+}

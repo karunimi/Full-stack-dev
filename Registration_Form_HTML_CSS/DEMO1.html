@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form using HTML and CSS</title>
+    <link href="demo.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form>
+      <fieldset class="field">
+        <legend>
+          <b><h2>Registration Form</h2></b>
+        </legend>
+        <!-- First name and last name using text as input -->
+        <label for="fname">First name: </label>
+        <input /><br /><br />
+        <label for="lname">Last name: </label>
+        <input type="text" /><br /><br />
+
+        <!-- email using email as input to satisfy the mail conditions -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" /><br /><br />
+
+        <!-- Date of birth using type = data -->
+        <label for="dob">Date of Birth:</label>
+        <input id="_4" type="date" id="dob" name="dob" /><br /><br />
+
+        <!-- Gender using radio button -->
+
+        <label for="gender">Gender:</label>
+        <input id="_5" type="radio" name="gender" value="male" /> Male
+        <input id="_6" type="radio" name="gender" value="female" /> Female
+        <br /><br />
+
+        <!-- marital using radio button -->
+
+        <label for="marital_status">Marital Status:</label>
+        <input id="_7" type="radio" name="marital_status" value="Married" />
+        Married
+        <input id="_8" type="radio" name="marital_status" value="Unmarried" />
+        Unmarried <br /><br />
+
+        <!-- Phone number using number as input -->
+        <label for="phone">Phone Number:</label>
+        <input id="_9" type="tel" id="phone" name="phone" /><br />
+
+        <!-- Address using text as input -->
+        <p>Permanent Address:</p>
+        <br />
+        <label for="d_no">Door Number:</label>
+        <input id="_10" type="text" id="d_no" name="d_no" /><br /><br />
+        <label for="street">Street:</label>
+        <input id="_11" type="text" id="street" name="street" /><br /><br />
+        <label for="Landmark">Lanmark:</label>
+        <input type="text" id="Landmark" name="Landmark" /><br /><br />
+
+        <!-- Country using dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="" disabled selected>Select your country</option>
+          <option value="IN">India</option>
+          <option value="AF">Afghanistan</option>
+          <option value="DZ">Algeria</option>
+          <option value="AS">American Samoa</option>
+          <option value="AR">Argentina</option>
+          <option value="AM">Armenia</option>
+          <option value="AU">Australia</option>
+          <option value="AT">Austria</option>
+        </select>
+        <br /><br />
+
+        <!-- State using dropdown -->
+        <label for="state">State:</label>
+        <select id="state" name="state">
+          <option value="" disabled selected>Select your country</option>
+          <option value="TN">Tamil Nadu</option>
+          <option value="KE">Kerala</option>
+          <option value="AP">Andra Pradesh</option>
+          <option value="UP">Uttra Pradesh</option>
+        </select>
+        <br /><br />
+
+        <!-- Pin Code -->
+        <label for="pin">Pin Code:</label>
+        <input type="number" id="pin" name="pin" />
+        <br /><br />
+
+        <!-- password and confirm password using password as input to not expose the text-->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" /><br /><br />
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+        /><br /><br />
+
+        <!-- File upload -->
+        <label for="file">Choose a file:</label>
+        <input
+          class="fileup"
+          style="background-color: #f5efff"
+          type="file"
+          id="file"
+          name="file"
+          accept=".jpg, .jpeg, .png, .pdf"
+        />
+        <br /><br />
+
+        <!-- terms and condition box using checkbox -->
+        <input type="checkbox" id="tc" name="tc" />
+        <label for="tc">Terms and Conditions:</label>
+        <br /><br />
+
+        <!-- subscription using checkbox -->
+        <input type="checkbox" id="sub" name="sub" />
+        <label for="sub">subscription:</label>
+        <br /><br />
+
+        <!-- Feedback comment section -->
+        <label for="feedback">Feedback:</label>
+        <textarea
+          name="feedback"
+          maxlength="5"
+          placeholder="Type your feedback here..."
+        ></textarea>
+        <br /><br />
+
+        <!-- Submit and Reset buttons -->
+        &nbsp;<input
+          type="submit"
+          value="Submit"
+        />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <input type="reset" value="Reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>
